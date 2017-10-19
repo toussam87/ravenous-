@@ -22,12 +22,11 @@ const businesses = [
 
 class App extends Component {
   render() {
-    <BusinessList businesses={businesses} />
     return (
       <div className="App">
         <h1>ravenous</h1>
         <SearchBar />
-        <BusinessList />
+        <BusinessList businesses={businesses} />
       </div>
     );
   }
