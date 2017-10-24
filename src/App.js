@@ -21,6 +21,10 @@ const businesses = [
 ];
 
 class App extends Component {
+  searchYelp(){
+
+  }
+  
   render() {
     return (
       <div className="App">
