@@ -51,6 +51,14 @@ class SearchBar extends React.Component {
         })
     }
 
+    handleSearch(event) {
+        this.setState({
+            
+        })
+
+        this.handleSearch = this.handleSearch.bind(this);
+    }
+    
     render() {
         return (
             <div className="SearchBar">
@@ -63,7 +71,7 @@ class SearchBar extends React.Component {
                     <input placeholder="Search Businesses" onChange={this.handleTermChange} />
                     <input placeholder="Where?" onChange={this.handleLocationChange} />
                 </div>
-                <div className="SearchBar-submit">
+                <div className="SearchBar-submit" onClick={this.handleSearch}>
                     <a>Let's Go</a>
                 </div>
             </div>
