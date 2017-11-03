@@ -7,8 +7,8 @@ import Yelp from './components/util/Yelp';
 
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       businesses: []
     };
