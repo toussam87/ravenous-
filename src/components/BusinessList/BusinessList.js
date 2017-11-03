@@ -6,9 +6,7 @@ class BusinessList extends React.Component {
     render() {
         return (
             <div className="BusinessList">
-                {
-                     this.props.businesses.map(function(business) { return <Business businesses='business' /> } )
-                };
+                { this.props.businesses.map(function(businesses) { return <Business business={business.id} /> } ) };
             </div>
         );
     }
