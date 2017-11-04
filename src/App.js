@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       businesses: []
     };
-    this.searchYelp.bind(this);
+    this.searchYelp = this.searchYelp.bind(this);
   }
 
   searchYelp(term, location, sortBy){
@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>ravenous</h1>
-        <SearchBar searchBar={this.state.searchBar} />
+        <SearchBar searchYelp={this.searchYelp} />
         <BusinessList businesses={this.state.businesses} />
       </div>
     );
